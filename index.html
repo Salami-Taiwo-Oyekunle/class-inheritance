@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Js class and objects</h1>
+        <script>
+            class student{
+                constructor (name,year){
+                    this.name=name;
+                this.year=year;
+                }
+                age(){
+                    let d1=new date()
+                    this.age=d1.getfullyear()-this,year;
+                }
+                show(){
+                    document.write('hello '+this.name +"your age is " +this.age)
+                }
+                class grade10 extends students{
+                    constructor (name,year,city){
+                    super (name,year);
+                    this.city=city;
+                    }
+                }
+                display(){
+                    document.write('hello '+this.name +"your age is " +this.age+ "you stay in "  +this.city);
+                }
+            }
+
+            s1=new student("suzie",2012)
+            s1.age();
+            s1.show();
+        </script>
+    </body>
+</html>
